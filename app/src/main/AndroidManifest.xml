@@ -20,6 +20,26 @@
             android:name=".PrincipalMenu"
             android:label="@string/title_activity_principal_menu" >
         </activity>
+        <activity
+            android:name=".MyProfile"
+            android:label="@string/title_activity_my_perfil" >
+        </activity>
+        <activity
+            android:name=".MyAddresses"
+            android:label="@string/title_activity_my_addresses" >
+        </activity>
+        <activity
+            android:name=".MyOrders"
+            android:label="@string/title_activity_my_orders" >
+        </activity>
+        <activity
+            android:name=".Locals"
+            android:label="@string/title_activity_locals" >
+        </activity>
+        <activity
+            android:name=".OrderDescription"
+            android:label="@string/title_activity_order_description" >
+        </activity>
     </application>
 
 </manifest>

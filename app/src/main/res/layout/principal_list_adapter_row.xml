@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="101dp"
+        android:layout_height="match_parent"
+        android:id="@+id/imageView"
+        android:background="@android:mipmap/sym_def_app_icon" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lomito"
+            android:id="@+id/tvTitle"
+            android:textStyle="bold"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pan, Carne, Pan Pan, Carne, Pan Pan, Carne, Pan Pan, Carne, Pan Pan, Carne, Pan Pan, Carne, Pan Pan, Carne, Pan"
+            android:id="@+id/tvDescription" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Precio:   "
+                android:id="@+id/tvPay"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$100"
+                android:id="@+id/tvPayValue" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
