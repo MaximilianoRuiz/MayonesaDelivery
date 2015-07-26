@@ -1,4 +1,4 @@
-package com.example.maxi.mayonesadelivery;
+package com.example.maxi.mayonesadelivery.dialogs;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
@@ -8,38 +8,28 @@ import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.util.ArrayList;
-import java.util.List;
+import com.example.maxi.mayonesadelivery.R;
 
-public class OrderListItemDialog extends DialogFragment {
+public class MyAddressListItemDialog extends DialogFragment {
 
-    String value;
-    TextView pay;
-    ListView lvOrderItemList;
+    String address;
+    TextView resumen;
 
-    public OrderListItemDialog(String value){
-        this.value = value;
+    public MyAddressListItemDialog(String address){
+        this.address = address;
     }
 
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
 
         final LayoutInflater inflater = (LayoutInflater) getActivity().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        final View view = inflater.inflate(R.layout.order_list_item, null);
+        final View view = inflater.inflate(R.layout.my_address_list_item, null);
 
-        List<String> values = new ArrayList<>();
-        values.add("$140");
-        values.add("$150");
-
-        pay = (TextView) view.findViewById(R.id.textView22);
-        lvOrderItemList = (ListView) view.findViewById(R.id.lvOrderItemList);
-        lvOrderItemList.setAdapter(new ArrayAdapter<>(getActivity(), android.R.layout.simple_list_item_1, values));
-        pay.setText(value);
+        resumen = (TextView) view.findViewById(R.id.textView16);
+        resumen.setText(resumen.getText() + address);
 
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         builder.setView(view);

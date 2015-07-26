@@ -9,4 +9,6 @@
     <string name="title_activity_my_orders">Mis Pedidos</string>
     <string name="title_activity_locals">Locales</string>
     <string name="title_activity_order_description">Pedido</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_order_maker">Realizar Pedido</string>
 </resources>

@@ -3,45 +3,73 @@
     android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".Login"
-    android:background="#fffff624">
+    android:background="@drawable/fondo_claro">
 
-    <TextView
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Login"
-        android:id="@+id/textView"
+        android:id="@+id/imageView4"
+        android:background="@drawable/mayonesa_logo_s"
+        android:layout_marginTop="54dp"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="92dp" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Login"
-        android:id="@+id/btnLogin"
-        android:layout_below="@+id/etPassword"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="48dp"/>
+        android:layout_centerHorizontal="true" />
 
     <EditText
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:id="@+id/etUser"
-        android:layout_marginTop="42dp"
-        android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true" />
+        android:inputType="textEmailAddress"
+        android:layout_below="@+id/imageView4"
+        android:layout_centerHorizontal="true"
+        android:hint="Usuario"/>
 
     <EditText
-        android:layout_width="wrap_content"
+        android:layout_width="248dp"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
         android:ems="10"
         android:id="@+id/etPassword"
-        android:layout_below="@+id/etUser"
+        android:layout_centerVertical="true"
         android:layout_alignLeft="@+id/etUser"
         android:layout_alignStart="@+id/etUser"
         android:layout_alignRight="@+id/etUser"
-        android:layout_alignEnd="@+id/etUser" />
+        android:layout_below="@+id/etUser"
+        android:layout_alignEnd="@+id/etUser"
+        android:hint="Contraseña"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Entrar"
+        android:id="@+id/btnLogin"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/etPassword"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿Olvidaste tu Contraseña?"
+        android:id="@+id/button5"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#1dffffff"
+        android:textColor="#b22627c5" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Crear Cuenta"
+        android:id="@+id/button4"
+        android:layout_above="@+id/button5"
+        android:layout_centerHorizontal="true"
+        android:background="#1dffffff"
+        android:textColor="#b22627c5" />
+
 </RelativeLayout>

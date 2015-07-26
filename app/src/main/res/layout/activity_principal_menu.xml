@@ -6,11 +6,15 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="#ffffac5a">
         <ListView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="#fffffdfe"
             android:id="@+id/principalList"
+            android:divider="#ffac5a"
+            android:dividerHeight="10dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
@@ -24,21 +28,8 @@
             android:layout_alignParentBottom="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:onClick="makeOrder"/>
+            android:onClick="describeOrder"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="PEDIDO = 0"
-            android:id="@+id/tvPedido"
-            android:gravity="center"
-            android:textColor="#fffffa1c"
-            android:textSize="50px"
-            android:textStyle="bold"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"
-            android:layout_below="@+id/principalList" />
     </RelativeLayout>
 
 
@@ -59,7 +50,7 @@
             android:choiceMode="singleChoice"
             android:divider="@android:color/background_light"
             android:dividerHeight="1dp"
-            android:background="#ffe8e734"
+            android:background="#ffffac5a"
             android:layout_alignParentTop="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true" />

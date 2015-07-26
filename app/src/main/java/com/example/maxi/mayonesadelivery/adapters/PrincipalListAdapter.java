@@ -1,4 +1,4 @@
-package com.example.maxi.mayonesadelivery;
+package com.example.maxi.mayonesadelivery.adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -7,14 +7,15 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
+import com.example.maxi.mayonesadelivery.R;
+
 import java.util.List;
 
-public class OrdersListAdapter extends ArrayAdapter<String> {
+public class PrincipalListAdapter extends ArrayAdapter<String> {
     Context context;
     List<String> list;
-    TextView tvValue;
-    public OrdersListAdapter(Context context, List<String> list) {
-        super(context, R.layout.order_list_adapter_row, android.R.id.text1, list);
+    public PrincipalListAdapter(Context context, List<String> list) {
+        super(context, R.layout.principal_list_adapter_row, android.R.id.text1, list);
         this.context = context;
         this.list = list;
     }
@@ -22,10 +23,10 @@ public class OrdersListAdapter extends ArrayAdapter<String> {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View row = inflater.inflate(R.layout.order_list_adapter_row, parent, false);
+        View row = inflater.inflate(R.layout.principal_list_adapter_row, parent, false);
 
-        tvValue = (TextView)row.findViewById(R.id.tvValue);
-        tvValue.setText(list.get(position));
+        TextView t = (TextView) row.findViewById(R.id.tvPayValue);
+        t.setText(list.get(position));
         return row;
     }
 }
