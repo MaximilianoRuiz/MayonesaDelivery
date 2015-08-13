@@ -138,6 +138,7 @@
         android:layout_height="wrap_content"
         android:text="Editar Perfil"
         android:id="@+id/button2"
+        android:onClick="openObtainPassword"
         android:layout_above="@+id/button"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"

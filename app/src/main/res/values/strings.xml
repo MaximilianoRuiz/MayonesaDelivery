@@ -11,4 +11,7 @@
     <string name="title_activity_order_description">Pedido</string>
     <string name="title_activity_maps">Map</string>
     <string name="title_activity_order_maker">Realizar Pedido</string>
+    <string name="title_activity_new_account">Cuenta Nueva</string>
+    <string name="title_activity_obtain_password">ObtainPassword</string>
+    <string name="title_activity_edit_profile">Editar Perfil</string>
 </resources>

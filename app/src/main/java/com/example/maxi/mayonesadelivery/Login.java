@@ -45,6 +45,13 @@ public class Login extends ActionBarActivity {
         });
     }
 
+    public void openNewAccount(View v){
+        Intent intent = new Intent(this, NewAccount.class);
+        startActivity(intent);
+    }
 
-
+    public void openObtainPassword(View v){
+        Intent intent = new Intent(this, ObtainPassword.class);
+        startActivity(intent);
+    }
 }
